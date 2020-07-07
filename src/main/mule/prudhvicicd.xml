@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="prudhvicicdFlow" doc:id="cf91de36-7b2b-4b1a-b782-50eab83dc902" >
 		<http:listener doc:name="Listener" doc:id="e96d7492-c33b-4d3f-ab9d-eee7b5fe79a4" config-ref="HTTP_Listener_config" path="cicdpath"/>
+		<set-payload value="testing payload for cicd" doc:name="Set Payload" doc:id="43d73077-c028-4762-8c93-4bb9826c7ea2" />
 		<logger level="INFO" doc:name="Logger" doc:id="7deb1d6c-ae15-4cc3-811d-18c3fe971d53" message="first logger in cicd"/>
 		<set-payload value="the output of cicd deploy ment first setpayload" doc:name="Set Payload" doc:id="a69dd8be-bb26-4ad6-9dc1-df68208dc03b" />
 	</flow>
